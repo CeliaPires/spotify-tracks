@@ -55,10 +55,137 @@ Click the gear icon in the lower left-hand corner of the screen to open the Mana
 
 Note that the kernel says `Python 3.12.8` as it inherits from the venv, so it will be Python-3.12.8 if that is what is installed on your PC. To confirm this, you can use the command below in a notebook code cell.
 
+<<<<<<< HEAD
 ```console
 ! python --version
 ## Hpothesis Testing
 ```
+=======
+
+
+
+## Exploratory Data Analysis (EDA) Summary
+
+This section visually explores the Spotify dataset to uncover trends, patterns, and relationships in the music data. These insights help guide hypothesis testing and deeper statistical analysis. The objective was to:
+
+- Understand how audio features and popularity are distributed.
+- Compare musical genres based on popularity and key audio features.
+- Use data visuals to uncover meaningful insights.
+
+
+### Key Visualizations
+
+**1. Correlation Heatmap**
+
+- Shows how strongly features like popularity, danceability, energy and valence  are related
+- Only weak linear relationships are found
+
+**2. Advanced Scatter Plot**
+
+- Plots danceability vs. popularity, with energy shown through color and valence by size
+- Result: No clear pattern. Popular songs span many combinations of features
+
+**3. Genre Popularity Bar Chart**
+
+- Compares the average popularity of each music genre
+- Result: Pop music stands out with higher popularity, but it is not overwhelmingly dominant
+
+
+### Main Insights
+
+**Feature Relationships**
+
+- Popularity has weak or no clear correlation with basic audio features like danceability and energy
+- Most features are independent from one another
+- Popularity is skewed, with only a few tracks achieving very high scores
+
+**Genre Patterns**
+
+- There are noticeable differences in popularity across genres
+- Pop tracks generally have higher popularity than most other genres
+
+**Visual Evidence**
+
+- There is no single combination of audio features that guarantees high popularity
+- Popular tracks can vary widely in their musical characteristics
+- Most tracks fall within moderate ranges across all features
+
+
+### Implications for Analysis
+
+- Weak correlations call for both Pearson and Spearman correlation tests
+- Skewed distributions justify the use of non-parametric tests like the Kruskal-Wallis test
+- Genre differences support further analysis through comparative statistical tests
+
+---
+
+### Conclusion
+
+Visual exploration shows that audio features alone offer limited insight into predicting a track's popularity. While pop music tends to be more popular, success comes in many forms. These findings suggest a greater focus on genre classification rather than relying solely on raw audio characteristics.
+
+
+
+## Dashboard
+
+## Hypothesis Tested
+
+This section presents the results of statistical analysis conducted to test two key assumptions about music popularity, using correlation methods and group comparison techniques.
+
+### Hypotheses
+
+1. **Audio Features Hypothesis**
+   *Songs with higher danceability and energy tend to be more popular.*
+
+2. **Genre Classification Hypothesis**
+   *Pop songs tend to have higher popularity than songs from other genres.*
+
+### Methods Used
+
+The following statistical tests were applied:
+
+- **Pearson Correlation** – Measures linear relationships
+- **Spearman Correlation** – Captures rank-based (monotonic) relationships
+- **Kendall's Tau** – Useful for handling tied data and smaller samples
+- **Independent t-test** – Compares average popularity between pop and non-pop tracks
+- **Mann-Whitney U Test** – A non-parametric alternative to the t-test
+- **Effect Size (Cohen’s d)** – Assesses practical significance of group differences
+
+
+### Results and Interpretation
+
+#### Hypothesis 1: Audio Features vs. Popularity
+
+* All correlation tests (Pearson, Spearman, Kendall) show statistically significant but **very weak** relationships between popularity and audio features like danceability, energy and valence.
+* Due to the large sample size, even small effects appear statistically significant, but they lack real-world importance.
+* **Conclusion**: Danceability and energy have minimal practical impact on popularity. This hypothesis is not supported.
+
+#### Hypothesis 2: Pop Songs vs. Other Genres
+
+* Statistical tests confirm that **pop songs are more popular** than other genres on average. This reinforces the popular narrative among music executives that pop songs tend to have more commercial success.
+* The difference is **statistically significant**, and the **effect size is small but meaningful**
+
+* **Conclusion**: Pop tracks do tend to have higher popularity, although the advantage is modest.
+
+
+### Key Takeaways
+
+* **Correlation does not imply causation**: Audio features alone do not determine popularity.
+* **Large datasets can exaggerate significance**: It's important to distinguish between statistical and practical significance.
+* **Multi-method approach ensures robustness**: Using several methods strengthens the reliability of results.
+* **Genre matters more than individual audio features**: Pop songs generally perform better, but not dramatically.
+
+
+### Limitations and Future Directions
+
+* The dataset does not include external factors like artist fame, marketing, or release timing.
+* Non-linear or interaction effects may exist but are not captured through basic correlation analysis.
+* Future research could explore contextual data, and time-based trends to better understand music popularity.
+
+
+### Final Conclusion
+
+Basic audio features like danceability and energy do not meaningfully predict a song’s popularity. While pop music has a small edge, success is likely driven by a combination of external factors beyond the sound itself.
+>>>>>>> spotify
 
 ## Machine Learning
 
