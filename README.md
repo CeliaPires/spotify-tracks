@@ -12,6 +12,15 @@ This is a dataset of Spotify tracks over a range of 125 different genres. Each t
 
 * License: Database: Open Database, Contents: © Or
 
+* The project aims to analyse music trends and build a recommendation engine.
+
+* **Potential features**:
+
+* Identify trends in music preferences across different demographics.
+* Develop a music recommendation system using collaborative filtering.
+* Visualise popular songs by genre and time.
+* Build an interactive dashboard for exploring music trends.
+
 ## Dataset content
 
 * 21 columns
@@ -19,7 +28,7 @@ This is a dataset of Spotify tracks over a range of 125 different genres. Each t
 
 * **Column description**: 
 
-| **Milestone** | **Task** |
+| **Column** | **Description** |
 |-----------------------------------------------------|------------------------------------------------------|
 | **track_id** | the Spotify ID for the track |
 | **artists** | The artists' names who performed the track. If there is more than one artist, they are separated by a ; |
@@ -44,6 +53,40 @@ This is a dataset of Spotify tracks over a range of 125 different genres. Each t
 
 ##  Ethics, GDPR, and Compliance
 
+
+## **Project plan**
+
+* During the ideation and organisation phase, as the Project Manager, brainstormed a series of user stories with milestones and deadlines to ensure that the deadline for completion was met. I also agreed the data cleanse and transformation strategy with the rest of the team.
+
+* Roles were distributed as follows:
+
+| **Role** | **Name**
+|-----------------------------------------------------|------------------------------------------------------|
+| **Project Management** | Celia |
+| **Data Architect** | Natalie |
+| **Data Analyst** | Gregory |
+| **Data Scientist** | Ivy |
+
+
+* The detail of the project Kanban board can be found here: [Kanban board](https://github.com/users/CeliaPires/projects/10/views/1)
+
+
+
+## **The rationale to map the business requirements to the data visualisations** 
+
+* Placeholder text **Gregory to update**
+
+
+## **Analysis techniques used**
+
+* **Data visualisation** to identify patterns and communicate insights visually.
+
+* **Hypothesis testing** to assess statistical significance of observed relationships.
+
+* **Data cleaning and preparation** to ensure data quality and integrity before analysis.
+
+* **Feature engineering** to create new variables that add meaning or improve analysis.
+=======
 ### Data Ethics
 While this dataset focuses on audio features and metadata of Spotify tracks, ethical considerations still apply. We have ensured that the use of the dataset aligns with ethical AI and machine learning principles, including fairness, transparency, and accountability.
 
@@ -98,7 +141,7 @@ These bins enabled:
 This step was particularly useful in exploratory data analysis, allowing us to explore how features like danceability and energy varied across genres or popularity levels.
 
  **Load**
-The transformed dataset was saved as a clean version for future use in modeling, dashboards, and EDA.
+The transformed dataset was saved as a clean version for future use in modelling, dashboards, and EDA.
 
 
 
