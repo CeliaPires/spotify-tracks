@@ -137,12 +137,12 @@ This section presents the results of statistical analysis conducted to test two 
 
 The following statistical tests were applied:
 
-* **Pearson Correlation** – Measures linear relationships
-* **Spearman Correlation** – Captures rank-based (monotonic) relationships
-* **Kendall's Tau** – Useful for handling tied data and smaller samples
-* **Independent t-test** – Compares average popularity between pop and non-pop tracks
-* **Mann-Whitney U Test** – A non-parametric alternative to the t-test
-* **Effect Size (Cohen’s d)** – Assesses practical significance of group differences
+- **Pearson Correlation** – Measures linear relationships
+- **Spearman Correlation** – Captures rank-based (monotonic) relationships
+- **Kendall's Tau** – Useful for handling tied data and smaller samples
+- **Independent t-test** – Compares average popularity between pop and non-pop tracks
+- **Mann-Whitney U Test** – A non-parametric alternative to the t-test
+- **Effect Size (Cohen’s d)** – Assesses practical significance of group differences
 
 
 ### Results and Interpretation
@@ -173,7 +173,7 @@ The following statistical tests were applied:
 
 * The dataset does not include external factors like artist fame, marketing, or release timing.
 * Non-linear or interaction effects may exist but are not captured through basic correlation analysis.
-* Future research could explore predictive models, contextual data, and time-based trends to better understand music popularity.
+* Future research could explore contextual data, and time-based trends to better understand music popularity.
 
 
 ### Final Conclusion
