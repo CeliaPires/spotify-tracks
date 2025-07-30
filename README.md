@@ -42,7 +42,23 @@ This is a dataset of Spotify tracks over a range of 125 different genres. Each t
 | **time_signature** | an estimated time signature. The time signature (meter) is a notational convention to specify how many beats are in each bar (or measure). The time signature ranges from 3 to 7 indicating time signatures of 3/4, to 7/4. |
 | **track_genre** | The genre in which the track belongs |
 
+##  Ethics, GDPR, and Compliance
 
+### Data Ethics
+While this dataset focuses on audio features and metadata of Spotify tracks, ethical considerations still apply. We have ensured that the use of the dataset aligns with ethical AI and machine learning principles, including fairness, transparency, and accountability.
+
+### GDPR & Personal Data
+This dataset does not contain any personally identifiable information (PII) or user data, and therefore is **not subject to GDPR** (General Data Protection Regulation) in its current form. However, if combined with user data (e.g., listening history, recommendations), in the future we will ensure that permissions, storage and use of the data complies with GDPR
+
+### Legal Usage
+The dataset originates from publicly accessible Spotify metadata but does not include raw audio. Any changes to the data set we would ensure that;
+- it complies with Spotify’s [Developer Terms of Service](https://developer.spotify.com/terms/)
+- There is no attempt to redistribute the dataset as-is or claim ownership of the data
+
+### Compliance Considerations
+- There is  no attempt to reverse-engineering or using the data in a way that violates Spotify's API terms or copyright laws.
+-  Licensing rules have been adhered to in the event this dataset is used alongside other music-related content or services.
+- If deploying models using this dataset (e.g., in production systems), we will document data sources and ensure data lineage is clear and compliant with relevant regulations.
 
 
 
