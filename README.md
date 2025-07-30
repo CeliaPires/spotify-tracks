@@ -57,6 +57,7 @@ Note that the kernel says `Python 3.12.8` as it inherits from the venv, so it wi
 
 ```console
 ! python --version
+## Hpothesis Testing
 ```
 
 ## Machine Learning
