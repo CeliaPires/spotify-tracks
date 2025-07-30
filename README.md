@@ -294,3 +294,15 @@ These results demonstrate that focusing on the most distinguishable genres impro
 - Tune model hyperparameters for even better performance  
 - Integrate with a user-facing interface or dashboard  
 - Explore multi-label classification to reflect songs with blended genres
+
+## References
+Resources used include:
+
+Code Institute LMS https://learn.codeinstitute.net/ci_program/daai_5
+
+ChatGPT https://chatgpt.com/
+
+Data to Viz https://www.data-to-viz.com/
+
+## Acknowledgements
+Thanks to all the CI SME's an coaches, special thanks to Emma Lamont for her guidance and  Vasi Pavaloi for support on a number of IT issues.
