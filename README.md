@@ -12,7 +12,6 @@
 
 
 
-
 ## Machine Learning
 
 This phase of the project focused on building and evaluating predictive models to classify songs into music genres based on their audio features.
