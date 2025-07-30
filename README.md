@@ -51,6 +51,8 @@ This is a dataset of Spotify tracks over a range of 125 different genres. Each t
 | **time_signature** | an estimated time signature. The time signature (meter) is a notational convention to specify how many beats are in each bar (or measure). The time signature ranges from 3 to 7 indicating time signatures of 3/4, to 7/4. |
 | **track_genre** | The genre in which the track belongs |
 
+##  Ethics, GDPR, and Compliance
+
 
 ## **Project plan**
 
@@ -84,6 +86,62 @@ This is a dataset of Spotify tracks over a range of 125 different genres. Each t
 * **Data cleaning and preparation** to ensure data quality and integrity before analysis.
 
 * **Feature engineering** to create new variables that add meaning or improve analysis.
+=======
+### Data Ethics
+While this dataset focuses on audio features and metadata of Spotify tracks, ethical considerations still apply. We have ensured that the use of the dataset aligns with ethical AI and machine learning principles, including fairness, transparency, and accountability.
+
+### GDPR & Personal Data
+This dataset does not contain any personally identifiable information (PII) or user data, and therefore is **not subject to GDPR** (General Data Protection Regulation) in its current form. However, if combined with user data (e.g., listening history, recommendations), in the future we will ensure that permissions, storage and use of the data complies with GDPR
+
+### Legal Usage
+The dataset originates from publicly accessible Spotify metadata but does not include raw audio. Any changes to the data set we would ensure that;
+- it complies with Spotify’s [Developer Terms of Service](https://developer.spotify.com/terms/)
+- There is no attempt to redistribute the dataset as-is or claim ownership of the data
+
+### Compliance Considerations
+- There is  no attempt to reverse-engineering or using the data in a way that violates Spotify's API terms or copyright laws.
+-  Licensing rules have been adhered to in the event this dataset is used alongside other music-related content or services.
+- If deploying models using this dataset (e.g., in production systems), we will document data sources and ensure data lineage is clear and compliant with relevant regulations.
+
+##  ETL Process (Extract, Transform, Load)
+
+### Extract
+
+The dataset was initially provided in CSV format, containing thousands of Spotify tracks across 125 genres. The structure was clean and well-tabulated, which allowed for a straightforward import using pandas.
+
+At this stage, all columns were loaded, including raw identifiers and audio-related metadata. Our goal was to prepare this dataset for effective exploratory data analysis (EDA), visualization, and machine learning workflows.
+
+### Transform
+**Column Pruning**
+We removed the track_id column as it served only as a unique identifier for Spotify’s internal system and had no analytical value. This helped reduce dimensionality and declutter the dataset.
+
+**Missing Data**
+Upon inspection, we discovered that only three entries contained missing values — a remarkably clean dataset. Since these represented an insignificant portion of the data, they were removed to avoid unnecessary null handling logic during analysis and model training.
+
+**Duplicate Records**
+One of the most critical steps involved handling duplicate records. These could arise due to:
+
+• Reissues or remasters
+
+• Appearances of the same track on multiple albums (e.g. original + greatest hits)
+
+• API aggregation from different Spotify endpoints.
+
+We took the following approach; 570 fully duplicated rows were found — these were identical across all columns, not just duplicates by track name or ID. We removed the duplicates while keeping the first occurrence. However, given the relatively low proportion of duplicates (577 out of 114k total records), we saved a copy of the original duplicates for potential future use or inspection.
+
+This cautious approach preserved data integrity while eliminating unnecessary repetition, whilst small.
+
+**Feature Engineering**
+To enhance interpretability and enable more effective visualizations and segmentation, we created several binned features from continuous variables:
+
+These bins enabled:
+    • Clearer histograms and category-based plots
+    • Simplified grouping for aggregation and pivoting
+    • Easier interpretation by non-technical stakeholders
+This step was particularly useful in exploratory data analysis, allowing us to explore how features like danceability and energy varied across genres or popularity levels.
+
+ **Load**
+The transformed dataset was saved as a clean version for future use in modelling, dashboards, and EDA.
 
 
 
