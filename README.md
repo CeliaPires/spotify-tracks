@@ -1,5 +1,9 @@
 # **A dataset of Spotify songs with different genres and their audio features**
 
+
+![Project image cover](images/dataset-cover-spotify.jpg)
+
+
 ## **Project introduction**
 
 This is a dataset of Spotify tracks over a range of 125 different genres. Each track has some audio features associated with it. The data is in CSV format which is tabular and can be loaded quickly.
